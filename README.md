@@ -1,2 +1,2 @@
 # react-wedding-website
-Website for my Wedding in 2020
+Website for my wedding in 2020
