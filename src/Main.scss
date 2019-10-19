@@ -1,0 +1,103 @@
+.container {
+	margin: 50px auto;
+	@media only screen and (min-width: 768px) {
+		padding: 50px;
+	}
+
+	.navigation {
+		.header {
+			font-family: Allura;
+			font-size: 60px;
+			font-family: 600;
+			@media only screen and (max-width: 767px) {
+				font-size: 40px;
+			}
+		}
+	}
+
+	.navbar-expand-sm {
+		justify-content: center;
+		margin-bottom: 40px;
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					padding: 10px 20px;
+				}
+				a {
+					font-family: Montserrat;
+					color: #000000;	
+				}
+			}
+		}
+	}
+
+	.partial {
+		.headerImage {
+			img {
+				width: 100%;
+			}
+		}
+		.subheader{
+			font-family: Allura;
+			font-size: 60px;
+			font-family: 600;
+			@media only screen and (max-width: 767px) {
+				font-size: 40px;
+			}
+		}
+
+		.intro {
+			font-family: Montserrat;
+			font-size: 16px;
+			margin-top: 50px;
+		}
+
+		.vector {
+			img {
+				max-width: 75px;
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+		}
+
+		.details {
+			.venue {
+				font-family: Allura;
+				font-size: 50px;
+				font-family: 600;
+				@media only screen and (max-width: 767px) {
+					font-size: 30px;
+				}
+			}
+			.date {
+				font-family: Montserrat;
+				font-size: 16px;
+				color: rgb(163, 165, 167);
+				.countdown {
+					margin-top: 20px;
+					.countdown-padding {
+						padding-left: 5px;
+						padding-right: 5px;
+					}
+				}
+			}
+			.copy {
+				font-family: Montserrat;
+				font-size: 16px;
+			}
+			.registry {
+				display: flex;
+				margin-top: 50px;
+				.icon {
+					flex: 1;
+				}
+			}
+		}
+	}
+}
+
+.active {
+	font-family: Montserrat;
+	font-weight: 600;
+	color: red;
+}
