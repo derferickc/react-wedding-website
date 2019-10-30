@@ -39,7 +39,7 @@ class Ourstory extends Component {
             <img src="https://lh3.googleusercontent.com/_8jQlDYfHmbBsSQR_9cIKXyHAcN76ux7shuW83cLPLlVanpNVmhxh9NZpuRj2pjZIbRL2_QIU6s6Y6ucYUpQDLLtzMDrESgdjyFPDGWUlCBA_SN47dDgmIEKV14jtQgZ0hjGjV1QiOm5rlVVyA_2gryyfDJp3wYYXom0i2SgAU-nmY9DDvyN7z40g6ZKSgH70LrrupJqefB9GaNe8TM7Ofb6wkeFTTBpUF2P4BidOw1cBul4psWqaopJH6FdokSmHegzA3BFtSQ2u3Aw-wcUI4txJDGo5ZpOe-Jx32NLQhu6mKHKeHJ3V4PbWsN888xRHr_wk71a7kyVsgFsO_ub5GCDp0UrCbuRKY7Ap6WsAKgUhn9lCzk1EbwltucHq-MDH1lIOJdqA-207YOq18ICZbolCIXi1H7hXNABYWaUIYH2WKV23NhSpkUze-PxrCXRYjhE8LNCmTb487ythtiX2UUKi-Irgkv7CCkqPyF0Wi7is6-2uiu8mlPTaSIXiGCxGoQrbUCou9SxKee366XWQUleTX4JOK_YJK0q296iKJsGQOFLYJZ5SNPnBtAkcW4On_i_3W8cOndC-5COt4tw9MB_b4ULoLMHSaVNQ8_wXdYYFsMtGpHgL5QD4FXNcJ16xr9rF_yeYf5-d--745R8Q55X6H7x2rzIpAtsRsnNFBemliQbLKoscS7w=w849-h896-no" alt="ladybug vector" />
           </div>
           
-          <div className="details col-12">
+          <div className="details col-12 col-sm-10 offset-sm-1">
             <div className="subheader-subnav">
               <div onClick={() => this.clickStory()} className="our-story-subhead subhead col-6" style={{fontWeight: this.state.showStory ? 'bold' : 'normal'}}>
                 OUR STORY
