@@ -1,4 +1,7 @@
 .container {
+	@media only screen and (min-width: 768px) {
+		box-shadow: rgba(168, 168, 168, 0.5) 0px 1px 4px 0px;
+	}
 	margin: 50px auto;
 	@media only screen and (min-width: 768px) {
 		padding: 50px;
@@ -86,12 +89,62 @@
 				font-size: 16px;
 			}
 			.registry {
-				display: flex;
 				margin-top: 50px;
 				.icon {
-					flex: 1;
+					display: inline-block;
+					@media only screen and (max-width: 767px) {
+						margin-bottom: 30px;
+					}
 				}
 			}
+			.our-story-copy {
+				p {
+				    font-size: 16px;
+				}
+				margin-top: 30px;
+				font-size: 14px;
+				font-family: Montserrat;
+	    		color: #000000;
+			}
+			.qa-copy {
+				p, strong {
+				    font-size: 16px;
+				}
+				margin-top: 30px;
+				font-size: 14px;
+				font-family: Montserrat;
+	    		color: #000000;
+			}
+		}
+
+		.subheader-subnav {
+			border-bottom: 1px solid rgb(226, 226, 226);
+			.subhead {
+			    display: inline-block;
+			    font-family: Montserrat;
+	    		color: #000000;
+	    		padding-top: 15px;
+	    		padding-bottom: 15px;
+	    		font-size: 14px;
+			}
+		}
+	}
+
+	.rsvp-here {
+		a {
+			text-decoration: none;
+			color: #000000;
+		}
+		.rsvp-button {
+			font-size: 16px;
+			max-width: 250px;
+			margin: 50px auto;
+			padding: 10px 25px;
+			background-color: #ffffff;
+			border: 2px solid #000000;
+		}
+		.rsvp-button:hover {
+			transform: scale(1.1);
 		}
 	}
 }
