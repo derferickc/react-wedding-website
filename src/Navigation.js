@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import {
-  Route,
   NavLink,
-  HashRouter
+  // Route,
+  // HashRouter
 } from "react-router-dom";
  
 class Navigation extends Component {

@@ -24,6 +24,9 @@ class Welcome extends Component {
             <div className="venue">
               Court in the Square
             </div>
+            <div className="date">
+              401 2nd Ave S, Seattle, WA 98104
+            </div>
             <Count />
           </div>
 

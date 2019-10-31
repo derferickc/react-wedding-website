@@ -53,9 +53,9 @@ class Ourstory extends Component {
               this.state.showStory?
 
               <div className="our-story-copy col-12">
-                <p>Once upon a time, Jason and Alisha went to watch critically acclaimed film, Crank (starring Academy Award attendee Jason Statham). Following the main feature, the two enjoyed a romantic stroll to the local watering hole - Jack in the Box - to enjoy the establishment's world class Jamoca shake. After the date, Jason rolled up his sleeve and revealed his very own white "the One" Nike wristband, which he then removed and shared onto Alisha's delicate wrist, as a symbolic gesture of commitment and mutual affection.</p>
-                <p>Jason was 18 and Alisha was 17.</p>
-                <p>The rest is hers and history.</p>
+                <p>Fred was Grace's the Freshman Interest Group (FIG) Leader during her first quarter at the University of Washington. He made many creepy / innpropriate comments and clearly had a crush on her right off the bat; Grace was teased relentlesly by her classmates and friends. Due to University policy, an instructor was not allowed to date a student... that would not deter Fred.</p>
+                <p>Immediately after the quarter was ended, Fred asked Grace to go to a party at his friends appartment and the rest is history!</p>
+                <p>After 8 years of dating Fred finally propsed back on campus where it all started.</p>
               </div>
 
               :
@@ -65,16 +65,16 @@ class Ourstory extends Component {
                 <p>See Our Story!</p>
 
                 <strong>Who made the first move? How?</strong>
-                <p>Jason</p>
+                <p>Fred</p>
 
                 <strong>Who's going to take out the trash?</strong>
-                <p>Nose goes</p>
+                <p>Grace</p>
 
                 <strong>What's your favorite activity together?</strong>
                 <p>Eating</p>
 
                 <strong>Where are you going for your honeymoon?</strong>
-                <p>Viva Italia!</p>
+                <p>The sunrise nation</p>
               </div>
             }
 
