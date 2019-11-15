@@ -13,15 +13,15 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
+    this.interval = setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
   }
 
   componentWillUnmount() {
-    
+    clearInterval(this.interval);
   }
 
   leading0(num) {
-    // console.log("counter");
+    console.log("counter");
     return num < 10 ? "0" + num : num;
   }
 

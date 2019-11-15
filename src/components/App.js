@@ -11,7 +11,6 @@ import Moments from "./Moments";
 import Ourstory from "./Ourstory";
 import Registry from "./Registry";
 import Rsvp from "./Rsvp";
-import Rsvphere from "./Rsvphere";
 import "./App.scss";
  
 class App extends Component {
