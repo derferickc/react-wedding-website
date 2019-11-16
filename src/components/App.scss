@@ -16,12 +16,90 @@
 				font-size: 40px;
 			}
 		}
+		.mobile-nav-trigger {
+			font-family: Montserrat;
+			color: rgb(129, 127, 127);
+			border-top: 2px solid #a3a5a7;
+			border-bottom: 2px solid #a3a5a7;
+			@media only screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+		.trigger-wrapper {
+			margin: 10px auto 25px auto;
+			.trigger-button {
+				font-family: Montserrat;
+				color: rgb(129, 127, 127);
+				border-top: 2px solid #a3a5a7;
+				border-bottom: 2px solid #a3a5a7;
+				@media only screen and (min-width: 768px) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.navbar-overlay {
+		width: 100%;
+	    margin: 0 auto;
+	    position: fixed;
+	    height: 100%;
+	    left: 50%;
+	    top: 50%;
+	    transform: 'translate(-50% -50%)';
+	    z-index: 1;
+	    background-color: #fff;
+	    padding: 25px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+		@media only screen and (max-width: 767px) {
+			margin-bottom: 25px;
+			display: none;
+		}
+		.overlay-close-button {
+			margin-bottom: 0px;
+		    padding: 3px 8px;
+		    cursor: pointer;
+		    border-radius: 50%;
+		    border: none;
+		    width: 30px;
+		    height: 30px;
+		    font-weight: bold;
+		    align-self: flex-end;
+		    background-color: #fff;
+		    font-family: Montserrat;
+		    font-size: 20px;
+		}
+
+		.navbar-nav {
+			@media only screen and (min-width: 768px) {
+				flex-direction: row !important;
+			}
+			.nav-item {
+				.nav-link {
+					padding: 10px 20px;
+				}
+				a {
+					font-family: Montserrat;
+					color: #000000;	
+				}
+			}
+		}
 	}
 
 	.navbar {
 		justify-content: center;
 		margin-bottom: 40px;
+		@media only screen and (max-width: 767px) {
+			margin-bottom: 25px;
+			display: none;
+		}
+
 		.navbar-nav {
+			@media only screen and (min-width: 768px) {
+				flex-direction: row !important;
+			}
 			.nav-item {
 				.nav-link {
 					padding: 10px 20px;
@@ -94,6 +172,13 @@
 					display: inline-block;
 					@media only screen and (max-width: 767px) {
 						margin-bottom: 30px;
+					}
+					a {
+						img {
+							@media only screen and (max-width: 800px) {
+								width: 100%;
+							}
+						}
 					}
 				}
 			}

@@ -11,9 +11,18 @@ import Moments from "./Moments";
 import Ourstory from "./Ourstory";
 import Registry from "./Registry";
 import Rsvp from "./Rsvp";
+import Dialog from "./Dialog";
 import "./App.scss";
  
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+     this.state = {
+        overlayIsOpen: false
+      }
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -22,6 +31,11 @@ class App extends Component {
           <div className="navigation text-center">
             <h1 className="header">Frederick &amp; Grace</h1>
             <Navigation />
+
+            <div className="trigger-wrapper">
+              <span onClick={(e) => this.setState({ overlayIsOpen: true })} className="trigger-button">MENU</span>
+            </div>
+            <Dialog overlayIsOpen={this.state.overlayIsOpen} onClose={(e) => this.setState({ overlayIsOpen: false })} />
           </div>
           
           <div className="content">

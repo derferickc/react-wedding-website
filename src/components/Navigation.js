@@ -31,7 +31,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-sm">
+      <nav className="navbar">
         <ul className="navbar-nav">
             <li className="nav-item" key="Welcome">
               <Link className="nav-link" to='/'>Welcome</Link>

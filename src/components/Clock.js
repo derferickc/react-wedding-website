@@ -21,7 +21,6 @@ class Clock extends Component {
   }
 
   leading0(num) {
-    console.log("counter");
     return num < 10 ? "0" + num : num;
   }
 
@@ -29,6 +28,7 @@ class Clock extends Component {
     const time = Date.parse(deadline) - Date.parse(new Date());
     if (time < 0) {
       this.setState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      clearInterval(this.interval);
     } else {
       const seconds = Math.floor((time / 1000) % 60);
       const minutes = Math.floor((time / 1000 / 60) % 60);
