@@ -1,37 +1,9 @@
 import React, { Component } from 'react';
 import {
-  Link,
+  NavLink
 } from "react-router-dom";
 
 let dialogStyles = {
-    width: '100%',
-    margin: '0 auto',
-    position: 'fixed',
-    height: '100%',
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%,-50%)',
-    zIndex: '1',
-    backgroundColor: '#ffffff',
-    padding: '25px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-start'
-};
-
-let dialogCloseButtonStyles = {
-    marginBottom: '0px',
-    padding: '3px 8px',
-    cursor: 'pointer',
-    borderRadius: '50%',
-    border: 'none',
-    width: '30px',
-    height: '30px',
-    fontWeight: 'bold',
-    alignSelf: 'flex-end',
-    backgroundColor: '#ffffff',
-    fontFamily: 'Montserrat',
-    fontSize: '20px'
 };
 
 
@@ -57,19 +29,19 @@ class Dialog extends Component {
 		]
 
         let dialog = (
-            <div className="navbar-overlay" style={dialogStyles}>
-                <button style={dialogCloseButtonStyles} onClick={this.props.onClose}>x</button>
+            <div className="navbar-overlay" id="overlay-styles" style={dialogStyles}>
+                <button id="overlay-close-button" onClick={this.props.onClose}>x</button>
 				
                 <h1 className="header">Frederick &amp; Grace</h1>
 
 				<ul className="navbar-nav">
 		            <li className="nav-item" key="Welcome">
-		              <Link className="nav-link" to='/' onClick={this.props.onClose}>Welcome</Link>
+		              <NavLink className="nav-link" exact={true} to='/' onClick={this.props.onClose}>Welcome</NavLink>
 		            </li>
 
 		          { mobileNavigation.map((nav) => (
 		            <li className="nav-item" key={nav.cta}>
-		              <Link className="nav-link" to={nav.url} onClick={this.props.onClose}>{nav.cta}</Link>
+		              <NavLink className="nav-link" to={nav.url} onClick={this.props.onClose}>{nav.cta}</NavLink>
 		            </li>
 		          ))}
 		          

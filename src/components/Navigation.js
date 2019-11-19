@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  Link,
+  NavLink
 } from "react-router-dom";
  
 class Navigation extends Component {
@@ -34,12 +34,12 @@ class Navigation extends Component {
       <nav className="navbar">
         <ul className="navbar-nav">
             <li className="nav-item" key="Welcome">
-              <Link className="nav-link" to='/'>Welcome</Link>
+              <NavLink className="nav-link" exact={true} to='/'>Welcome</NavLink>
             </li>
 
           { this.state.navigation.map((nav) => (
             <li className="nav-item" key={nav.cta}>
-              <Link className="nav-link" to={nav.url}>{nav.cta}</Link>
+              <NavLink className="nav-link" to={nav.url}>{nav.cta}</NavLink>
             </li>
           ))}
           
