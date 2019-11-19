@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {
   BrowserRouter,
   Route,
+  Switch
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,6 +13,7 @@ import Ourstory from "./Ourstory";
 import Registry from "./Registry";
 import Rsvp from "./Rsvp";
 import Dialog from "./Dialog";
+import NotFound from "./NotFound";
 import "./App.scss";
  
 class App extends Component {
@@ -39,11 +41,14 @@ class App extends Component {
           </div>
           
           <div className="content">
-            <Route exact path="/" component={Welcome}/>
-            <Route path="/ourstory" component={Ourstory}/>
-            <Route path="/rsvp" component={Rsvp}/>
-            <Route path="/moments" component={Moments}/>
-            <Route path="/registry" component={Registry}/>
+            <Switch>
+              <Route exact path="/" component={Welcome}/>
+              <Route path="/ourstory" component={Ourstory}/>
+              <Route path="/rsvp" component={Rsvp}/>
+              <Route path="/moments" component={Moments}/>
+              <Route path="/registry" component={Registry}/>
+              <Route component={NotFound}/>
+            </Switch>
           </div>
 
         </div>
