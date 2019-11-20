@@ -22,7 +22,7 @@ class Registry extends Component {
         // {
         //   name: "honefund",
         //   url: "https://www.honeyfund.com",
-        //   image: "https://lh3.googleusercontent.com/ZhZ4Yz4GcJoBxLTusmvR8v36aGyQ6s8BZEuzObrcpLIXd0xIgdfK8vWW63-325j3_oB2T2R0Q6THbiZQKhFtkdZJz2zOjnBkUjt90hTAnV3fajjH_igG-J6DH-MMzO2vppi-LejbcezI-VYLcy3KV4K_D7Ab9fLwd8ka4obQz320Jl0U07ayAzHZdBVDr20f96aFu0VDvqq7eXgwEVhZ2yOw9wExOmR1Banp_jDd21KT4-TOwtQdNZtzx6Z2iYukR6G5nDpvoot8cSHl-Wri8KH5mvaSz-UuHaHpQ4dWL5KeNzo_fFkybNrY4EmuNiEEvU8jIJx3CVAgai2J5gr_UZnH22dgtHWCsac2E42iuPjgeLuPlON2iylz5Iy8cao-b-l9aHzJ42RkJxG3KmHckYt1K6-trn330AqRXrA5d8T0Gqp4_z_MarwELf4haoK5g6ORRNE3R10jt9SjNtVgNiHiXFDoIWDa_ow90PkaivDafkBwEn077n5OZpU4MlDY_DnM2Z4pMg8qFWOtUUEs0hCh7Atv4WQDmpSHmrgbJYhsr3Itw-fjL2_puhQTQih7m9OvBBBUYz4dHIjkabnL5fHkNgZ8eNcJcG4rNOgiIiaBTmnADfJBcGTvhiDfX2wdfioTqOIDIUO8aSdh3IfvXmVtRmixvUVLxHiZvGtQU0Q1Jc4a4u79wLor=w200-h67-no",
+        //   image: "https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/r-honeyfund.png?alt=media&token=08971a32-f3aa-467f-953b-09e2a989d36e",
         //   alt: "honeyfund vector"
         // }
       ]
