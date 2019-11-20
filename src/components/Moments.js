@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Rsvphere from "./Rsvphere";
+import ImageComponent from "./Image";
 
 class Moments extends Component {
   constructor(props) {
@@ -116,22 +117,22 @@ class Moments extends Component {
           <div className="grid">
             <div className="column">
               { this.state.column1.map((tile) => (
-                <img src={tile.image} alt={tile.alt} key={tile.alt} />
+                <ImageComponent tile={tile} />
               ))}
             </div>
             <div className="column">
               { this.state.column2.map((tile) => (
-                <img src={tile.image} alt={tile.alt} key={tile.alt} />
+                <ImageComponent tile={tile} />
               ))}
             </div>
             <div className="column">
               { this.state.column3.map((tile) => (
-                <img src={tile.image} alt={tile.alt} key={tile.alt} />
+                <ImageComponent tile={tile} />
               ))}
             </div>
             <div className="column">
               { this.state.column4.map((tile) => (
-                <img src={tile.image} alt={tile.alt} key={tile.alt} />
+                <ImageComponent tile={tile} />
               ))}
             </div>
           </div>
