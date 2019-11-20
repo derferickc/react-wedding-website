@@ -81,8 +81,8 @@ class Ourstory extends Component {
     return (
       <div className="partial text-center">
         <div className="row">
-          <div className="headerImage col-10 offset-1 col-sm-8 offset-sm-2">
-             <img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/placeholder.jpg?alt=media&token=5dc2a64e-01c4-4269-aad5-d2520f848859" alt="ourstory hero" />
+          <div className="headerImage col-12 col-sm-8 offset-sm-2">
+             <img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(9_of_83).jpg?alt=media&token=e4f4f402-388a-4b2c-ab9e-ca47627eabe9" alt="ourstory hero" />
           </div>
           <div className="col-2"></div>
           
