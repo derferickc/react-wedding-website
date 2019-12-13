@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ImageComponent extends Component {
+class Image extends Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class ImageComponent extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div className="d-none d-sm-block">
           <img src={this.props.tile.image} alt={this.props.tile.alt} key={this.props.tile.alt} onClick={this.handleShowDialog}/>
 
@@ -42,9 +42,9 @@ class ImageComponent extends Component {
         <div className="d-block d-sm-none">
           <img src={this.props.tile.image} alt={this.props.tile.alt} key={this.props.tile.alt}/>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
 
-export default ImageComponent;
+export default Image;

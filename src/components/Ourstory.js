@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Rsvphere from "./Rsvphere";
+import RsvpHere from "./RsvpHere";
 
 function StoryCopy() {
   const stories = [
@@ -108,7 +108,7 @@ class Ourstory extends Component {
 
           </div>
 
-          <Rsvphere />
+          <RsvpHere />
         </div>
       </div>
     );

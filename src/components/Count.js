@@ -12,9 +12,9 @@ class Count extends Component {
   
   render() {
     return (
-      <div className="Count">
+      <React.Fragment>
         <Clock deadline={this.state.deadline} />
-      </div>
+      </React.Fragment>
     );
   }
 }

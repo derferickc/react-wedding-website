@@ -54,9 +54,9 @@ class Dialog extends Component {
         }
 
         return (
-            <div className="overlay-wrapper">
+            <React.Fragment>
                 {dialog}
-            </div>
+            </React.Fragment>
         );
     }
 }

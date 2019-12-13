@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Rsvphere from "./Rsvphere";
+import RsvpHere from "./RsvpHere";
  
 class Registry extends Component {
   constructor(props) {
@@ -58,7 +58,7 @@ class Registry extends Component {
 
           </div>
 
-          <Rsvphere />
+          <RsvpHere />
         </div>
       </div>
     );

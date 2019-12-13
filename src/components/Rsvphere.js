@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import {
   NavLink,
 } from "react-router-dom";
-import "./App.scss";
 
-class Rsvphere extends Component {
+class RsvpHere extends Component {
 
   render() {
     return (
@@ -18,4 +17,4 @@ class Rsvphere extends Component {
     );
   }
 }
-export default Rsvphere;
+export default RsvpHere;

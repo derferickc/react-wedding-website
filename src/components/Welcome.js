@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Count from "./Count";
-import Rsvphere from "./Rsvphere";
+import RsvpHere from "./RsvpHere";
 
 class Welcome extends Component {
 
@@ -30,7 +30,7 @@ class Welcome extends Component {
             <Count />
           </div>
 
-          <Rsvphere />
+          <RsvpHere />
         </div>
       </div>
     );

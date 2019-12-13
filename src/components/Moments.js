@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Rsvphere from "./Rsvphere";
-import ImageComponent from "./Image";
+import RsvpHere from "./RsvpHere";
+import Image from "./Image";
 
 class Moments extends Component {
   constructor(props) {
@@ -162,27 +162,27 @@ class Moments extends Component {
           <div className="grid">
             <div className="column">
               { this.state.column1.map((tile) => (
-                <ImageComponent tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} />
               ))}
             </div>
             <div className="column">
               { this.state.column2.map((tile) => (
-                <ImageComponent tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} />
               ))}
             </div>
             <div className="column">
               { this.state.column3.map((tile) => (
-                <ImageComponent tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} />
               ))}
             </div>
             <div className="column">
               { this.state.column4.map((tile) => (
-                <ImageComponent tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} />
               ))}
             </div>
           </div>
 
-          <Rsvphere />
+          <RsvpHere />
         </div>
       </div>
     );

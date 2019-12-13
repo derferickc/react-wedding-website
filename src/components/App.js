@@ -14,7 +14,7 @@ import Registry from "./Registry";
 import Rsvp from "./Rsvp";
 import Dialog from "./Dialog";
 import NotFound from "./NotFound";
-import "./App.scss";
+import '../App.scss'
  
 class App extends Component {
   constructor(props) {
