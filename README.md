@@ -10,6 +10,8 @@
 
 <img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/moments-screenshot.png?alt=media&token=2792675f-115d-4b77-a970-74d599f71dcb" title="moments-screenshot" alt="moments-screenshot">
 
+---
+
 <img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/ourstory-screenshot.png?alt=media&token=420a8a1f-4500-4eff-b2e7-ebd0c3d11a8e" title="ourstory-screenshot" alt="ourstory-screenshot">
 
 ## Installation / Run Commands
