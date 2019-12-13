@@ -1,5 +1,5 @@
 <a href="https://choesenbygrace-wedding-website.web.app/">
-	<img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(77_of_83).jpg?alt=media&token=ad0fbea5-aaa8-4dd0-8b20-6d5a2fda1a10" title="engagement-photo" alt="engagement-photo">
+	<img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(77_of_83).jpg?alt=media&token=ad0fbea5-aaa8-4dd0-8b20-6d5a2fda1a10" title="engagement-photo" alt="engagement-photo" width="300">
 </a>
 
 # ChoesenByGrace Wedding Website
