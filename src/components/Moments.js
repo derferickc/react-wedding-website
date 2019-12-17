@@ -7,6 +7,7 @@ class Moments extends Component {
     super(props)
 
     this.state = {
+      dialogOpen: false,
       column1: [
         {
           image: 'https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(12_of_83).jpg?alt=media&token=9c7452ce-d486-445f-926f-a6ccf8a3ade2',
@@ -154,7 +155,16 @@ class Moments extends Component {
         },
       ]
     }
+
+    this.handleDialogToggle = this.handleDialogToggle.bind(this)
   }
+
+  handleDialogToggle() {
+    this.setState({
+      dialogOpen: !this.state.dialogOpen
+    })
+  }
+
   render() {
     return (
       <div className="partial text-center">
@@ -162,22 +172,22 @@ class Moments extends Component {
           <div className="grid">
             <div className="column">
               { this.state.column1.map((tile) => (
-                <Image tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
               ))}
             </div>
             <div className="column">
               { this.state.column2.map((tile) => (
-                <Image tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
               ))}
             </div>
             <div className="column">
               { this.state.column3.map((tile) => (
-                <Image tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
               ))}
             </div>
             <div className="column">
               { this.state.column4.map((tile) => (
-                <Image tile={tile} key={tile.alt} />
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
               ))}
             </div>
           </div>

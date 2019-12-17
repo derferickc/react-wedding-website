@@ -1,11 +1,28 @@
+#root {
+	@media only screen and (min-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-image: url("https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/purple-desktop-wallpaper.jpg?alt=media&token=172daf0a-3e42-4905-a596-144c0509df1d");
+		background-repeat: repeat;
+		background-position: top;
+		background-size: contain;
+	}
+}
 .container {
+	background-color: #ffffff;
 	@media only screen and (min-width: 768px) {
 		box-shadow: rgba(168, 168, 168, 0.5) 0px 1px 4px 0px;
-	}
-	margin: 50px auto;
-	@media only screen and (min-width: 768px) {
 		padding: 50px;
 	}
+	@media only screen and (max-width: 767px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-image: url("https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/purple-mobile-background.jpg?alt=media&token=268966e0-9f6e-4ffd-bd37-1301c0529828");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: contain;
+	}
+	margin: auto;
 
 	.navigation {
 		.header {
@@ -227,7 +244,7 @@
 		.rsvp-button {
 			font-size: 16px;
 			max-width: 250px;
-			margin: 50px auto;
+			margin: 50px auto 0 auto;
 			padding: 10px 25px;
 			background-color: #ffffff;
 			border: 2px solid #000000;
