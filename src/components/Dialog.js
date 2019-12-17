@@ -3,10 +3,6 @@ import {
   NavLink
 } from "react-router-dom";
 
-let dialogStyles = {
-};
-
-
 class Dialog extends Component {
     render() {
     	const mobileNavigation = [
@@ -29,7 +25,7 @@ class Dialog extends Component {
 		]
 
         let dialog = (
-            <div className="navbar-overlay" id="overlay-styles" style={dialogStyles}>
+            <div className="navbar-overlay" id="overlay-styles">
                 <button id="overlay-close-button" onClick={this.props.onClose}>x</button>
 				
                 <h1 className="header">Frederick &amp; Grace</h1>

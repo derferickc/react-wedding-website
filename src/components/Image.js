@@ -12,7 +12,7 @@ class Image extends Component {
   handleShowDialog = () => {
     this.setState({
       isOpen: !this.state.isOpen
-    });
+    })
   };
 
   render() {
@@ -28,13 +28,16 @@ class Image extends Component {
               open
               onClick={this.handleShowDialog}>
 
-              <img
-                className="image"
-                src={this.props.tile.image}
-                onClick={this.handleShowDialog}
-                alt={this.props.tile.alt}
-              />
+              <div className="dialog-inner-wrapper">
+                <button id="overlay-close-button" onClick={this.handleShowDialog}>x</button>
 
+                <img
+                  className="image"
+                  src={this.props.tile.image}
+                  onClick={this.handleCloseDialog}
+                  alt={this.props.tile.alt}
+                />
+              </div>
             </dialog>
           )}
         </div>
