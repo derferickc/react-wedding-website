@@ -4,7 +4,7 @@
 
 # ChoesenByGrace Wedding Website
 
-> A single page application that was used to store information about our wedding in 2020: application has tabs that handle venue information, stories about how we met, ability to RSVP, links to our registry, and a gallery of our engagement photos. 
+> A single page application that is being used to handle information about our wedding in 2020; the application has tabs that handle information about the venue, the story about how we met, links to our registry, and has a gallery of our engagement photos where individual pictures can be clicked on to pop up a modal for a more detailed picture view.
 
 > Technology used: React, HTML5, SASS, CSS3 ES6, Firebase
 
