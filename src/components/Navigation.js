@@ -30,6 +30,7 @@ class Navigation extends Component {
   }
 
   render() {
+    const { navigation } = this.state
     return (
       <nav className="navbar">
         <ul className="navbar-nav">
@@ -37,7 +38,7 @@ class Navigation extends Component {
               <NavLink className="nav-link" exact={true} to='/'>Welcome</NavLink>
             </li>
 
-          { this.state.navigation.map((nav) => (
+          { navigation.map((nav) => (
             <li className="nav-item" key={nav.cta}>
               <NavLink className="nav-link" to={nav.url}>{nav.cta}</NavLink>
             </li>

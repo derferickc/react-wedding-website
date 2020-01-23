@@ -3,8 +3,8 @@ import RsvpHere from "./RsvpHere";
 
 function StoryCopy() {
   const stories = [
-    "Fred was Grace's the Freshman Interest Group (FIG) Leader during her first quarter at the University of Washington. He made many creepy / innpropriate comments and clearly had a crush on her right off the bat; Grace was teased relentlesly by her classmates and friends. Due to University policy, an instructor was not allowed to date a student... that would not deter Fred.",
-    "Immediately after the quarter was ended, Fred asked Grace to go to a party at his friends appartment and the rest is history!",
+    "Fred and Grace met in 2010 when he was an instructor for the Freshman Interest Group that she signed up for at UW. He immediately took a liking to Grace and admittedly did not try to mask it. Due to of University policy for instructors and educators, he was not allowed to date a student during the quarter in which he was grading them.",
+    "Instead, the first day of Spring quarter Fred messaged Grace and asked her to lunch to which she hesitantly agreed...",
     "After 8 years of dating Fred finally propsed back on campus where it all started."
   ]
 
@@ -24,20 +24,24 @@ function TidbitsCopy() {
       answer: "See Our Story!"
     },
     {
-      question: "Who made the first move? How?",
-      answer: "Fred"
-    },
-    {
       question: "Who's going to take out the trash?",
-      answer: "Grace"
+      answer: "Probably Grace before heading out to work in the AM"
     },
     {
       question: "What's your favorite activity together?",
-      answer: "Eating"
+      answer: "Going to the dingy Phở Bắc Boat restaurant on rainy days in the International district. The flickering lights, chairs from the 80's, and sticky table tops were all forgiven by the legendary bowl of piping hot goodness"
+    },
+    {
+      question: "Most memorable date?",
+      answer: "Fred was late on their first date at Thai 65 on the Ave... He still hears about it a decade later"
     },
     {
       question: "Where are you going for your honeymoon?",
-      answer: "The sunrise nation"
+      answer: "Japan and South Korea"
+    },
+    {
+      question: "Most memorable trip taken together?",
+      answer: "Every trip we have ever taken to Hawaii has been amazing; all of the delicious foods, tasty desserts, and of course the beautiful beaches. We even saw a Monk Seal on the North Shore on our last visit."
     },
   ]
 
@@ -78,6 +82,8 @@ class Ourstory extends Component {
   }
 
   render() {
+    const { showStory } = this.state
+
     return (
       <div className="partial text-center">
         <div className="row">
@@ -92,17 +98,24 @@ class Ourstory extends Component {
           
           <div className="details col-12 col-sm-10 offset-sm-1">
             <div className="subheader-subnav">
-              <div onClick={this.clickStory} className="our-story-subhead subhead col-6" style={{fontWeight: this.state.showStory ? 'bold' : 'normal'}}>
+              <div onClick={this.clickStory} className="our-story-subhead subhead col-6" 
+                style={{fontWeight: this.state.showStory
+                  ? 'bold'
+                  : 'normal'
+                }}>
                 OUR STORY
               </div>
-              <div onClick={this.clickTidbits} className="qa-subhead subhead col-6" style={{fontWeight: !this.state.showStory ? 'bold' : 'normal'}}>
+              <div onClick={this.clickTidbits} className="qa-subhead subhead col-6" 
+                style={{fontWeight: !this.state.showStory
+                  ? 'bold'
+                  : 'normal'
+                }}>
                 TIDBITS
               </div>
             </div>
 
-            {this.state.showStory
+            {showStory
               ? <StoryCopy />
-
               : <TidbitsCopy />
             }
 

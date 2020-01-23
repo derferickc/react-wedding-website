@@ -24,7 +24,7 @@ class Dialog extends Component {
 	        },
 		]
 
-        let dialog = (
+        const dialog = (
             <div className="navbar-overlay" id="overlay-styles">
                 <button id="overlay-close-button" onClick={this.props.onClose}>x</button>
 				
@@ -45,13 +45,12 @@ class Dialog extends Component {
             </div>
         );
 
-        if (! this.props.overlayIsOpen) {
-            dialog = null;
-        }
-
         return (
             <React.Fragment>
-                {dialog}
+                {this.props.overlayIsOpen
+	              ? dialog
+	              : null
+	            }
             </React.Fragment>
         );
     }

@@ -30,6 +30,7 @@ class Registry extends Component {
   }
 
   render() {
+    const { registries } = this.state
     return (
       <div className="partial text-center">
         <div className="row">
@@ -47,7 +48,7 @@ class Registry extends Component {
             </div>
             
             <div className="registry">
-              {this.state.registries.map((registry) => (
+              {registries.map((registry) => (
                 <div className="icon col-sm-6" key={registry.name}>
                   <a href="{registry.url}">
                     <img className={registry.name} src={registry.image} alt={registry.alt} />

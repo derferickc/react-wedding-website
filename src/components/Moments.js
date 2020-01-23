@@ -8,6 +8,7 @@ class Moments extends Component {
 
     this.state = {
       dialogOpen: false,
+      modalsOpen: 0,
       column1: [
         {
           image: 'https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(12_of_83).jpg?alt=media&token=9c7452ce-d486-445f-926f-a6ccf8a3ade2',
@@ -160,34 +161,43 @@ class Moments extends Component {
   }
 
   handleDialogToggle() {
-    this.setState({
-      dialogOpen: !this.state.dialogOpen
-    })
+    if(this.state.modalsOpen === 0) {
+      this.setState({
+        dialogOpen: true,
+        modalsOpen: this.state.modalsOpen +1
+      })
+    } else if (this.state.modalsOpen === 1){
+      this.setState({
+        dialogOpen: false,
+        modalsOpen: 0
+      })
+    }
   }
 
   render() {
+    const { column1, column2, column3, column4 } = this.state
     return (
       <div className="partial text-center">
         <div className="row">
           <div className="grid">
             <div className="column">
-              { this.state.column1.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
+              { column1.map((tile) => (
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
               ))}
             </div>
             <div className="column">
-              { this.state.column2.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
+              { column2.map((tile) => (
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
               ))}
             </div>
             <div className="column">
-              { this.state.column3.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
+              { column3.map((tile) => (
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
               ))}
             </div>
             <div className="column">
-              { this.state.column4.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.dialogOpen}/>
+              { column4.map((tile) => (
+                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
               ))}
             </div>
           </div>
