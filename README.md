@@ -6,7 +6,7 @@
 
 > A single page application that is being used to handle information about our wedding in 2020; the application has tabs that handle information about the venue, the story about how we met, links to our registry, and has a gallery of our engagement photos where individual pictures can be clicked on to pop up a modal for a more detailed picture view.
 
-> Technology used: React, HTML5, SASS, CSS3 ES6, Firebase
+> Technology used: React, HTML5, SASS, CSS3, TransitionGroup, CSSTransition, ES6, Firebase
 
 <img src="https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/moments-screenshot.png?alt=media&token=2792675f-115d-4b77-a970-74d599f71dcb" title="moments-screenshot" alt="moments-screenshot">
 

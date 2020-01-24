@@ -311,32 +311,11 @@
 			}
 		}
 	}
+}
 
-	.dialog {
-		z-index: 3;
-		box-shadow: 1px solid black;
-		position: static;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 60%;
-		.dialog-inner-wrapper {
-			position: relative;
-			#overlay-close-button {
-				font-family: Montserrat;
-			    font-size: 20px;
-			    cursor: pointer;
-			    border-radius: 50%;
-			    border: none;
-			    width: 30px;
-			    height: 30px;
-			    font-weight: bold;
-			    align-self: flex-end;
-			    background-color: #fff;
-			    position: absolute;
-				top: 0;
-				right: -2px;
-			}
-		}
+.modal-body-wrapper {
+	img {
+		width: 100%;
 	}
 }
 

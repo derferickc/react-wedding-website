@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import RsvpHere from "./RsvpHere";
-import Image from "./Image";
+import Modal from "react-bootstrap/Modal"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Moments extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      dialogOpen: false,
-      modalsOpen: 0,
+      activeModal: null,
       column1: [
         {
           image: 'https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/engagement%2FGrace_Fred_Engagement_HiRes_(12_of_83).jpg?alt=media&token=9c7452ce-d486-445f-926f-a6ccf8a3ade2',
@@ -157,21 +157,20 @@ class Moments extends Component {
       ]
     }
 
-    this.handleDialogToggle = this.handleDialogToggle.bind(this)
+    this.clickHandler = this.clickHandler.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
 
-  handleDialogToggle() {
-    if(this.state.modalsOpen === 0) {
-      this.setState({
-        dialogOpen: true,
-        modalsOpen: this.state.modalsOpen +1
-      })
-    } else if (this.state.modalsOpen === 1){
-      this.setState({
-        dialogOpen: false,
-        modalsOpen: 0
-      })
-    }
+  clickHandler(e, index) {
+    this.setState({
+      activeModal: index
+    })
+  }
+
+  hideModal() {
+    this.setState({
+      activeModal: null
+    })
   }
 
   render() {
@@ -181,26 +180,130 @@ class Moments extends Component {
         <div className="row">
           <div className="grid">
             <div className="column">
-              { column1.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
+              { column1.map((tile, index) => (
+                <React.Fragment>
+                
+                {/* Mobile handler */}
+                <div className="image-tile d-sm-none">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt}/>
+                </div>
+
+                {/* Desktop handler */}
+                <div className="image-tile d-none d-sm-block">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt} onClick={e => this.clickHandler(e, index)}/>
+                </div>
+
+                {/* Modal handler */}
+                <Modal show={this.state.activeModal === index} onHide={this.hideModal}>
+                  <Modal.Header closeButton>
+                    <Modal.Title></Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <div className="modal-body-wrapper col-12">
+                      <img className="img-responsive" src={tile.image} alt={tile.alt} />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <div onClick={this.hideModal}>Close</div>
+                  </Modal.Footer>
+                </Modal>
+                </React.Fragment>
               ))}
             </div>
             <div className="column">
-              { column2.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
+              { column2.map((tile, index) => (
+                <React.Fragment>
+                
+                {/* Mobile handler */}
+                <div className="image-tile d-sm-none">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt}/>
+                </div>
+
+                {/* Desktop handler */}
+                <div className="image-tile d-none d-sm-block">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt} onClick={e => this.clickHandler(e, index+100)}/>
+                </div>
+
+                {/* Modal handler */}
+                <Modal show={this.state.activeModal === index+100} onHide={this.hideModal}>
+                  <Modal.Header closeButton>
+                    <Modal.Title></Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <div className="modal-body-wrapper col-12">
+                      <img className="img-responsive" src={tile.image} alt={tile.alt} />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <div onClick={this.hideModal}>Close</div>
+                  </Modal.Footer>
+                </Modal>
+                </React.Fragment>
               ))}
             </div>
             <div className="column">
-              { column3.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
+              { column3.map((tile, index) => (
+                <React.Fragment>
+                
+                {/* Mobile handler */}
+                <div className="image-tile d-sm-none">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt}/>
+                </div>
+
+                {/* Desktop handler */}
+                <div className="image-tile d-none d-sm-block">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt} onClick={e => this.clickHandler(e, index+200)}/>
+                </div>
+
+                {/* Modal handler */}
+                <Modal show={this.state.activeModal === index+200} onHide={this.hideModal}>
+                  <Modal.Header closeButton>
+                    <Modal.Title></Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <div className="modal-body-wrapper col-12">
+                      <img className="img-responsive" src={tile.image} alt={tile.alt} />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <div onClick={this.hideModal}>Close</div>
+                  </Modal.Footer>
+                </Modal>
+                </React.Fragment>
               ))}
             </div>
             <div className="column">
-              { column4.map((tile) => (
-                <Image tile={tile} key={tile.alt} parentdialog={this.handleDialogToggle} dialogisopen={this.state.modalsOpen}/>
+              { column4.map((tile, index) => (
+                <React.Fragment>
+                
+                {/* Mobile handler */}
+                <div className="image-tile d-sm-none">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt}/>
+                </div>
+
+                {/* Desktop handler */}
+                <div className="image-tile d-none d-sm-block">
+                  <img src={tile.image} alt={tile.alt} key={tile.alt} onClick={e => this.clickHandler(e, index+300)}/>
+                </div>
+
+                {/* Modal handler */}
+                <Modal show={this.state.activeModal === index+300} onHide={this.hideModal}>
+                  <Modal.Header closeButton>
+                    <Modal.Title></Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <div className="modal-body-wrapper col-12">
+                      <img className="img-responsive" src={tile.image} alt={tile.alt} />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <div onClick={this.hideModal}>Close</div>
+                  </Modal.Footer>
+                </Modal>
+                </React.Fragment>
               ))}
             </div>
-          </div>
+          </div> 
 
           <RsvpHere />
         </div>
