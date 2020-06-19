@@ -9,22 +9,16 @@ class Registry extends Component {
       registries: [
         {
           name: "amazon",
-          url: "https://www.amazon.com",
+          url: "https://www.amazon.com/wedding/share/ChoesenByGrace",
           image: "https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/r-amazon.png?alt=media&token=88f4c0e2-25a3-4413-84b6-6c5a68a6e157",
           alt: "amazon vector"
         },
         {
           name: "cratebarrel",
-          url: "https://www.crateandbarrel.com",
+          url: "https://www.crateandbarrel.com/gift-registry/frederick-choe-and-grace-kim/r6135748",
           image: "https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/r-crate%26barrel.png?alt=media&token=1457a6d6-d561-4ef6-b22f-d484cfb833f3",
           alt: "createbarrel vector"
-        },
-        // {
-        //   name: "honefund",
-        //   url: "https://www.honeyfund.com",
-        //   image: "https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/r-honeyfund.png?alt=media&token=08971a32-f3aa-467f-953b-09e2a989d36e",
-        //   alt: "honeyfund vector"
-        // }
+        }
       ]
     }
   }
@@ -50,7 +44,7 @@ class Registry extends Component {
             <div className="registry">
               {registries.map((registry) => (
                 <div className="icon col-sm-6" key={registry.name}>
-                  <a href="{registry.url}">
+                  <a href={registry.url}>
                     <img className={registry.name} src={registry.image} alt={registry.alt} />
                   </a>
                 </div>

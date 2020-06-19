@@ -2,10 +2,6 @@
 	@media only screen and (min-width: 768px) {
 		padding-top: 50px;
 		padding-bottom: 50px;
-		background-image: url("https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/purple-desktop-wallpaper.jpg?alt=media&token=172daf0a-3e42-4905-a596-144c0509df1d");
-		background-repeat: repeat;
-		background-position: top;
-		background-size: contain;
 	}
 }
 
@@ -33,10 +29,6 @@
 	@media only screen and (max-width: 767px) {
 		padding-top: 50px;
 		padding-bottom: 50px;
-		background-image: url("https://firebasestorage.googleapis.com/v0/b/choesenbygrace-wedding-website.appspot.com/o/purple-desktop-wallpaper-mobile.jpeg?alt=media&token=023ef72f-4689-4539-9d1a-48ee8302347d");
-		background-repeat: no-repeat;
-		background-position: top;
-		background-size: contain;
 	}
 	margin: auto;
 
@@ -211,8 +203,9 @@
 					}
 					a {
 						img {
-							@media only screen and (max-width: 800px) {
-								width: 100%;
+							width: 80%;
+							@media only screen and (max-width: 767px) {
+								margin: 10px auto;
 							}
 						}
 					}
@@ -313,10 +306,18 @@
 	}
 }
 
+.modal.show .modal-dialog {
+	margin: 10px auto;
+}
+
 .modal-body-wrapper {
 	img {
 		width: 100%;
 	}
+}
+
+.modal-footer:hover {
+	cursor: pointer;
 }
 
 .active {
