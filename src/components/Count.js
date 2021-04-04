@@ -6,7 +6,7 @@ class Count extends Component {
     super(props);
 
     this.state = {
-      deadline: "Saturday, September 5, 2020"
+      deadline: "Saturday, September 4, 2021"
     };
   }
   
