@@ -13,7 +13,9 @@ class Welcome extends Component {
           </div>
          
           <div className="intro col-10 offset-1">
-            We joyfully invite you to our wedding celebration!
+            <p>We joyfully invite you to our wedding celebration!</p>
+            <p>Dress code is cocktail.</p>
+            <p>Please bring your vaccination card or a picture of it.</p>
           </div>
 
           <div className="vector col-12 text-center">
@@ -26,6 +28,9 @@ class Welcome extends Component {
             </div>
             <div className="date">
               401 2nd Ave S, Seattle, WA 98104
+            </div>
+            <div className="time">
+              4:00 PM PST
             </div>
             <Count />
           </div>
